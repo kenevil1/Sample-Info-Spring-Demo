@@ -21,7 +21,7 @@ const RetrieveSamples = () => {
     const calculateDate = (expiryDate) => {
         var date = new Date(expiryDate);
         var timeInMs = date.getTime() - Date.now();
-        return(timeInMs / (1000 * 3600 * 24)).toFixed();
+        return(Math.ceil(timeInMs / (1000 * 3600 * 24)));
     }
 
     // Iterates through samples and generates a card each
