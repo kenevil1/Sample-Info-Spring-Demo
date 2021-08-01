@@ -24,6 +24,7 @@ const RetrieveSamples = () => {
         return(timeInMs / (1000 * 3600 * 24)).toFixed();
     }
 
+    // Iterates through samples and generates a card each
     return getSamples.map((sample, index) => {
         return (
             <Card key={index} name={sample.name} expiryInDays={calculateDate(sample.expiryDate)} sampleSource={sample.sampleSource}/>
