@@ -9,3 +9,11 @@ The cards on the page display the expiry in days and change colour depending on 
 ## Running Demo
 - In order to run this, you first need to run the SampleInfoPageController.
 - After that, run npm install in the frontend folder, and then npm start to start the server.
+
+## Images Of Demo
+![](UI.png)
+This is what the frontend react UI looks like.
+
+
+![](SpringAPIRequest.png)
+This is the Spring server receiving JSON from the API request.

@@ -35,6 +35,7 @@ public class SampleInfoPageController {
         headers.set("apiKey", tokenAPI);
         HttpEntity request = new HttpEntity(headers);
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, request, String.class);
+        System.out.println(response.getBody());
         return response.getBody();
     }
 }
